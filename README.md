@@ -2,7 +2,7 @@
 A web application that allows user to submit addresses of 1 pickup point and 1 drop-off point, and then display the waypoints in the map. 
 
 ## Goals
-1. Get the addresses of pickup and drop-off points from user input and submit them to our Mock API backend (you can find the documentation for the Mock API [here](https://github.com/lalamove/challenge/blob/master/mockApi/DOC.md)).
+1. Get the addresses of pickup and drop-off points from user input and submit them to our Mock API backend.
 	- Retry logic when the backend is busy (returns `in progress` response).
 	- Should stop requesting when the backend returns error.
 	- All errors must be handled.
