@@ -7,4 +7,4 @@ export const mapConfig = {
   mapTypeId: "roadmap"
 };
 
-export const apiKey = "AIzaSyBtuCzmWiqghKRfiHDs-uW5uO8bQkK51ic";
+export const apiKey = "";
