@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <google-map-loader :map-config="mapConfig" :apiKey="apiKey">
+      <template slot-scope="scopeProps">
+        <my-position :google="scopeProps.google" :map="scopeProps.map" />
+        <markers :google="scopeProps.google" :map="scopeProps.map" />
+      </template>
+    </google-map-loader>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GoogleMapLoader from './components/GoogleMapLoader.vue'
+import MyPosition from "./components/MyPosition.vue";
+import Markers from "./components/Markers.vue";
+import { mapConfig, apiKey } from "@/conf.js";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    GoogleMapLoader,
+    MyPosition,
+    Markers
+  },
+  data() {
+    return {
+      mapConfig: mapConfig,
+      apiKey: apiKey
+    };
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
