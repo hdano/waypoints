@@ -1,8 +1,8 @@
 export const mapConfig = {
-  zoom: 3,
+  zoom: 13,
   center: {
-    lat: 51,
-    lng: 0
+    lat: 14.59554454,
+    lng: 120.99517822
   },
   mapTypeId: "roadmap"
 };
