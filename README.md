@@ -1,6 +1,6 @@
 # Map Waypoints Generator
 
-A web application that allows user to submit addresses of 1 pickup point and 1 drop-off point, and then display the waypoints on an embedded map. 
+[UNDER DEVELOPMENT] A web application that allows user to submit addresses of 1 pickup point and 1 drop-off point, and then display the waypoints on an embedded map. 
 
 ## Project setup
 ```
