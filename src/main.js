@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 import store from "./store";
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import vSelect from 'vue-select'
+import 'vue-select/dist/vue-select.css';
 
 Vue.config.productionTip = false
+Vue.component('v-select', vSelect)
 
 new Vue({
   store,
