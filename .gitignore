@@ -2,3 +2,7 @@
 /LALAFOOD-REQUIREMENTS.txt
 /lalafood/
 /stores-map-vue-master/
+/backend/.env/
+/backend/__pycache__/
+/frontend/app/node_modules/
+/frontend/app/stores-map-vue-master/

@@ -91,7 +91,7 @@ export default {
     search: _.debounce((loading, search, vm) => {
       axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
       axios.get(
-        `https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${escape(search)}&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyBtuCzmWiqghKRfiHDs-uW5uO8bQkK51ic`
+        `/search/${escape(search)}`
       ).then(res => {
         res.json().then(json => (vm.options = json.items));
         loading(false);
