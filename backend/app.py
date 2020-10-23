@@ -8,6 +8,8 @@ from db import init_db, query_db, close_connection
 
 app = Flask(__name__)
 
+MAP_API_KEY = ''
+
 
 @app.route("/search/<keyword>")
 def search(keyword):
@@ -23,7 +25,7 @@ def search(keyword):
         'input=%s' % keyword,
         'inputtype=textquery',
         'fields=photos,formatted_address,name,rating,opening_hours,geometry',
-        'key=AIzaSyBtuCzmWiqghKRfiHDs-uW5uO8bQkK51ic'
+        'key=%s' % MAP_API_KEY
     ]
     url = '%s?%s' % (base_url, '&'.join(query_str))
     # r = requests.get(url)
